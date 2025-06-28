@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Resource Needs Report"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+
+        <!-- 🥫 Food -->
+        <TextView android:text="Food Needs:" android:textStyle="bold"
+            android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <CheckBox android:id="@+id/checkFoodRice" android:text="Rice"
+            android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <CheckBox android:id="@+id/checkFoodCanned" android:text="Canned Goods"
+            android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <CheckBox android:id="@+id/checkFoodWater" android:text="Drinking Water"
+            android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <CheckBox android:id="@+id/checkFoodBaby" android:text="Baby Food"
+            android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <CheckBox android:id="@+id/checkFoodOther" android:text="Others"
+            android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <EditText android:id="@+id/foodOtherInput"
+            android:hint="Specify other food"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- 🧻 Non-Food -->
+        <TextView android:text="Non-Food Needs:" android:textStyle="bold"
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <CheckBox android:id="@+id/checkNonClothing" android:text="Clothing"
+            android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <CheckBox android:id="@+id/checkNonHygiene" android:text="Hygiene Kits"
+            android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <CheckBox android:id="@+id/checkNonBlankets" android:text="Blankets"
+            android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <CheckBox android:id="@+id/checkNonUtensils" android:text="Cooking Utensils"
+            android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <CheckBox android:id="@+id/checkNonOther" android:text="Others"
+            android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <EditText android:id="@+id/nonFoodOtherInput"
+            android:hint="Specify other non-food"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- 💊 Medical -->
+        <TextView android:text="Medical Needs:" android:textStyle="bold"
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <CheckBox android:id="@+id/checkMedFirstAid" android:text="First Aid Kits"
+            android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <CheckBox android:id="@+id/checkMedMeds" android:text="Medicines"
+            android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <CheckBox android:id="@+id/checkMedPersonnel" android:text="Medical Personnel"
+            android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <CheckBox android:id="@+id/checkMedOther" android:text="Others"
+            android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <EditText android:id="@+id/medicalOtherInput"
+            android:hint="Specify other medical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- 🏠 Shelter -->
+        <TextView android:text="Shelter Needs:" android:textStyle="bold"
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <CheckBox android:id="@+id/checkShelterTents" android:text="Tents"
+            android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <CheckBox android:id="@+id/checkShelterTarps" android:text="Tarpaulins"
+            android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <CheckBox android:id="@+id/checkShelterMats" android:text="Sleeping Mats"
+            android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <CheckBox android:id="@+id/checkShelterOther" android:text="Others"
+            android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <EditText android:id="@+id/shelterOtherInput"
+            android:hint="Specify other shelter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- 🛠️ Manpower/Equipment -->
+        <TextView android:text="Manpower/Equipment:" android:textStyle="bold"
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <CheckBox android:id="@+id/checkManRescue" android:text="Search and Rescue"
+            android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <CheckBox android:id="@+id/checkManMedical" android:text="Medical Teams"
+            android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <CheckBox android:id="@+id/checkManMaterials" android:text="Construction Materials"
+            android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <CheckBox android:id="@+id/checkManTransport" android:text="Vehicles/Transport"
+            android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <CheckBox android:id="@+id/checkManOther" android:text="Others"
+            android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <EditText android:id="@+id/manpowerOtherInput"
+            android:hint="Specify other manpower/equipment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- ⚠️ Priority -->
+        <TextView android:text="Priority Level:" android:textStyle="bold"
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <RadioGroup android:id="@+id/priorityGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/radioHigh"
+                android:text="High"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:id="@+id/radioMedium"
+                android:text="Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:id="@+id/radioLow"
+                android:text="Low"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RadioGroup>
+
+        <!-- 🗒️ Remarks -->
+        <TextView android:text="Remarks (optional):"
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText android:id="@+id/remarksInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minLines="2"
+            android:hint="Add any notes here" />
+
+        <!-- 📍 Location -->
+        <Button
+            android:id="@+id/btnGetLocation"
+            android:text="Get Current Location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:id="@+id/locationText"
+            android:text="Location: Not Set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp" />
+
+    </LinearLayout>
+</ScrollView>

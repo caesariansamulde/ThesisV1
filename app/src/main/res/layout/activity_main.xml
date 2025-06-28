@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/btnCreateProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Disaster Profile"
+        android:layout_margin="16dp" />
+
+    <Button
+        android:id="@+id/btnViewProfiles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Disaster Profiles"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnTools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tools"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center" />
+
+
+    <TextView
+        android:id="@+id/status_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status: Not Connected"
+        android:textSize="18sp"
+        android:layout_marginBottom="10dp" />
+
+    <ListView
+        android:id="@+id/device_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accessibility Assessment Report"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Assessed By -->
+        <TextView android:text="Assessed By (optional):" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <EditText android:id="@+id/assessedBy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName" />
+
+        <!-- Facility Type -->
+        <TextView android:text="Facility Type:" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" />
+        <RadioGroup android:id="@+id/facilityTypeGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/radioMainRoad" android:text="Main Road" android:tag="1" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/radioNationalRoad" android:text="National Road" android:tag="2" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/radioAccessRoad" android:text="Access Road to Affected Area" android:tag="3" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/radioBridge" android:text="Bridge" android:tag="4" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </RadioGroup>
+
+        <!-- Accessibility Status -->
+        <TextView android:text="Accessibility Status:" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" />
+        <RadioGroup android:id="@+id/statusGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/radioAllVehicles" android:text="Passable to All Vehicles" android:tag="1" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/radioLightVehicles" android:text="Passable to Light Vehicles Only" android:tag="2" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/radioFootOnly" android:text="Passable by Foot Only" android:tag="3" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/radioNotPassable" android:text="Not Passable" android:tag="4" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/radioUnknown" android:text="Unknown" android:tag="5" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </RadioGroup>
+
+        <!-- Obstructions -->
+        <TextView android:text="Obstructions (Check all that apply):" android:textStyle="bold" android:layout_marginTop="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <CheckBox android:id="@+id/checkFlooding" android:text="Flooding" android:tag="1" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <CheckBox android:id="@+id/checkLandslide" android:text="Landslide" android:tag="2" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <CheckBox android:id="@+id/checkTrees" android:text="Fallen Trees" android:tag="3" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <CheckBox android:id="@+id/checkDebris" android:text="Debris" android:tag="4" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <CheckBox android:id="@+id/checkBridgeDamage" android:text="Damaged Bridge/Infrastructure" android:tag="5" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <CheckBox android:id="@+id/checkOther" android:text="Other" android:tag="6" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <EditText android:id="@+id/otherObstructionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Please specify if 'Other' is checked"
+            android:inputType="text" />
+
+        <!-- Alternative Access -->
+        <TextView android:text="Are alternative access routes available?" android:layout_marginTop="16dp" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <RadioGroup android:id="@+id/alternativeGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/radioAltYes" android:text="Yes" android:tag="1" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/radioAltNo" android:text="No" android:tag="2" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </RadioGroup>
+        <EditText android:id="@+id/altRouteDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Describe the alternative route (if yes)"
+            android:inputType="text" />
+
+        <!-- Remarks -->
+        <TextView android:text="Remarks (optional):" android:layout_marginTop="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <EditText android:id="@+id/remarks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minLines="2"
+            android:inputType="textMultiLine" />
+
+        <!-- Location -->
+        <Button android:id="@+id/btnGetLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📍 Get Current Location"
+            android:layout_marginTop="16dp" />
+
+        <TextView android:id="@+id/locationText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location: Not Set"
+            android:layout_marginTop="4dp" />
+
+        <!-- Photos -->
+        <Button android:id="@+id/btnAddPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📷 Select Photos"
+            android:layout_marginTop="12dp" />
+
+        <LinearLayout
+            android:id="@+id/photoPreviewContainer"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp" />
+
+        <!-- Submit -->
+        <Button android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="✅ Submit Report"
+            android:layout_marginTop="20dp" />
+    </LinearLayout>
+</ScrollView>

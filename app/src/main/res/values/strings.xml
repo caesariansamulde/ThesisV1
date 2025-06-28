@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ThesisV1</string>
+
+    <string-array name="sort_options">
+        <item>Newest First</item>
+        <item>Oldest First</item>
+    </string-array>
+
+</resources>

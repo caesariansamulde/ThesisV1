@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/titleText"
+            android:text="Infrastructure Report Details"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Report ID -->
+        <TextView
+            android:id="@+id/reportIdText"
+            android:text="Report ID:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Facility Type -->
+        <TextView
+            android:id="@+id/facilityTypeLabel"
+            android:text="Facility Type:"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/facilityTypeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+        <!-- Damage -->
+        <TextView
+            android:id="@+id/damageLabel"
+            android:text="Damage Type:"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/damageText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+        <!-- Remarks -->
+        <TextView
+            android:id="@+id/remarksLabel"
+            android:text="Remarks:"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/remarksText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Location -->
+        <TextView
+            android:id="@+id/locationLabel"
+            android:text="Location:"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/locationText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Photos -->
+        <TextView
+            android:id="@+id/photosLabel"
+            android:text="Attached Photos:"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/photoPreviewContainer"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp" />
+
+        <!-- Generate PDF -->
+        <Button
+            android:id="@+id/btnGeneratePdf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Generate PDF"
+            android:layout_marginTop="20dp" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/allReportsRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Filter Chips -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/chipContainer"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/chipAll"
+                android:text="All"
+                android:checked="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimary"
+                android:background="@drawable/chip_background"
+                android:padding="8dp"
+                android:textColor="@android:color/black"
+                android:layout_marginEnd="8dp" />
+
+            <CheckBox
+                android:id="@+id/chipCasualty"
+                android:text="Casualty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimary"
+                android:background="@drawable/chip_background"
+                android:padding="8dp"
+                android:textColor="@android:color/black"
+                android:layout_marginEnd="8dp" />
+
+            <CheckBox
+                android:id="@+id/chipInfrastructure"
+                android:text="Infrastructure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimary"
+                android:background="@drawable/chip_background"
+                android:padding="8dp"
+                android:textColor="@android:color/black"
+                android:layout_marginEnd="8dp" />
+
+            <CheckBox
+                android:id="@+id/chipUtility"
+                android:text="Utility"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimary"
+                android:background="@drawable/chip_background"
+                android:padding="8dp"
+                android:textColor="@android:color/black"
+                android:layout_marginEnd="8dp" />
+
+            <CheckBox
+                android:id="@+id/chipAccessibility"
+                android:text="Accessibility"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimary"
+                android:background="@drawable/chip_background"
+                android:padding="8dp"
+                android:textColor="@android:color/black" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- Sort Options -->
+    <Spinner
+        android:id="@+id/sortSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/sort_options"
+        android:layout_marginTop="8dp" />
+
+    <!-- Report List -->
+    <ListView
+        android:id="@+id/reportListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"/>
+</LinearLayout>
